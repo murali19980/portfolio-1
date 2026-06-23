@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Murali Krishna — AI SaaS Builder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <span class="nav-logo">murali@appforge:~$</span>
+  <ul class="nav-links">
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <p class="hero-eyebrow">Indie AI SaaS Builder · Hyderabad, India</p>
+  <h1>Building AI tools.<br><span class="accent">Selling them.</span></h1>
+  <div class="terminal-line">
+    <span class="prompt">$</span>
+    <span class="typed-text" id="typed-text"></span>
+    <span class="cursor" id="cursor"></span>
+  </div>
+  <p class="hero-sub">
+    I build focused AI-powered SaaS tools using Python, Django, and local LLMs —
+    then list them for sale on Acquire. Every product ships with clean code,
+    documented APIs, and real usage.
+  </p>
+  <div class="hero-cta">
+    <a href="#projects" class="btn btn-primary">View Projects →</a>
+    <a href="https://github.com/murali19980" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
+  </div>
+</div>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee-track" id="marquee-track">
+    <span class="marquee-item">Python</span>
+    <span class="marquee-item">Django</span>
+    <span class="marquee-item">FastAPI</span>
+    <span class="marquee-item">LLMs</span>
+    <span class="marquee-item">Ollama</span>
+    <span class="marquee-item">OpenRouter</span>
+    <span class="marquee-item">RAG</span>
+    <span class="marquee-item">REST APIs</span>
+    <span class="marquee-item">PostgreSQL</span>
+    <span class="marquee-item">Vue 3</span>
+    <span class="marquee-item">Cloudflare</span>
+    <span class="marquee-item">MCP</span>
+    <span class="marquee-item">ChromaDB</span>
+    <span class="marquee-item">SQL Server</span>
+  </div>
+</div>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <p class="section-label">// what I build</p>
+  <h2>Projects</h2>
+  <p class="section-sub">Each tool solves one real problem. Built lean, priced to sell.</p>
+
+  <div class="projects-grid">
+
+    <div class="card">
+      <div class="card-top">
+        <div class="card-icon">🔍</div>
+        <span class="badge badge-build">In Dev</span>
+      </div>
+      <h3>OpenReview</h3>
+      <p>AI-powered pull request reviewer with confidence-based model escalation. Starts with local models, only escalates to paid APIs when it needs to. Model-agnostic by design.</p>
+      <div class="card-tags">
+        <span class="tag">Python</span>
+        <span class="tag">Ollama</span>
+        <span class="tag">OpenRouter</span>
+        <span class="tag">GitHub API</span>
+      </div>
+      <a href="https://github.com/murali19980" target="_blank" class="card-link">View on GitHub →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <div class="card-icon">⚡</div>
+        <span class="badge badge-live">Live</span>
+      </div>
+      <h3>TaskForge</h3>
+      <p>Personal productivity tool with LLM-powered task decomposition. FastAPI backend, Vue 3 frontend, Streamlit dashboard. Integrates with Ollama and OpenRouter for local + cloud AI.</p>
+      <div class="card-tags">
+        <span class="tag">FastAPI</span>
+        <span class="tag">Vue 3 TS</span>
+        <span class="tag">Streamlit</span>
+        <span class="tag">LLM</span>
+      </div>
+      <a href="https://github.com/murali19980" target="_blank" class="card-link">View on GitHub →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <div class="card-icon">🛡️</div>
+        <span class="badge badge-live">Live</span>
+      </div>
+      <h3>VibeGuard-MCP</h3>
+      <p>Local-first secret scanner with MCP server integration. Detects API keys, tokens, and credentials in codebases before they leak. Runs entirely offline.</p>
+      <div class="card-tags">
+        <span class="tag">Python 3.11+</span>
+        <span class="tag">Typer</span>
+        <span class="tag">MCP</span>
+        <span class="tag">httpx</span>
+      </div>
+      <a href="https://github.com/murali19980/vibeguard-mcp" target="_blank" class="card-link">View on GitHub →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <div class="card-icon">📚</div>
+        <span class="badge badge-live">Live</span>
+      </div>
+      <h3>VaultRAG</h3>
+      <p>Local-first retrieval-augmented generation system. Ask questions against your own documents — no data ever leaves your machine. Built for privacy-first teams.</p>
+      <div class="card-tags">
+        <span class="tag">Python</span>
+        <span class="tag">ChromaDB</span>
+        <span class="tag">Ollama</span>
+        <span class="tag">LangChain</span>
+      </div>
+      <a href="https://github.com/murali19980/VaultRAG" target="_blank" class="card-link">View on GitHub →</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <p class="section-label">// who I am</p>
+  <h2>About</h2>
+
+  <div class="stats-row">
+    <div class="stat-card">
+      <div class="stat-num">4+</div>
+      <div class="stat-label">Projects shipped</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">5+</div>
+      <div class="stat-label">Years Python dev</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">Local</div>
+      <div class="stat-label">LLM first approach</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">Open</div>
+      <div class="stat-label">Source first</div>
+    </div>
+  </div>
+
+  <div class="about-grid">
+    <div class="about-text">
+      <p>
+        I'm a Python/Django backend developer based in Hyderabad, India,
+        transitioning into AI/ML engineering. My background includes ERP systems,
+        REST API design, and query optimization — now applied to building
+        local-first AI tools.
+      </p>
+      <p>
+        I build narrow, focused SaaS tools — no bloat, no VC, just
+        clean code that solves one problem well. When a tool reaches product-market fit,
+        I list it for sale and move to the next one.
+      </p>
+      <p>
+        All my tools prefer local LLMs (Ollama) over cloud APIs —
+        keeping costs low and data private for end users.
+      </p>
+      <div class="skill-list">
+        <span class="skill-pill">Python</span>
+        <span class="skill-pill">Django</span>
+        <span class="skill-pill">FastAPI</span>
+        <span class="skill-pill">REST APIs</span>
+        <span class="skill-pill">Ollama</span>
+        <span class="skill-pill">RAG</span>
+        <span class="skill-pill">SQL Server</span>
+        <span class="skill-pill">PostgreSQL</span>
+        <span class="skill-pill">Vue 3</span>
+        <span class="skill-pill">LangChain</span>
+        <span class="skill-pill">MCP</span>
+        <span class="skill-pill">ChromaDB</span>
+      </div>
+    </div>
+
+    <div class="why-buy">
+      <h4>Why buy from me?</h4>
+      <div class="why-item">
+        <div class="why-dot"></div>
+        <p>Clean, documented code — no spaghetti, no magic numbers. You can read it in an afternoon.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-dot"></div>
+        <p>Local-first architecture means low running costs — often zero AI API fees.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-dot"></div>
+        <p>I hand over full source, docs, deployment configs, and a 30-day handoff support window.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-dot"></div>
+        <p>Built by a developer who actually uses the tools — not an agency padding billable hours.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-box">
+    <p class="section-label">// get in touch</p>
+    <h2>Let's talk.</h2>
+    <p>Interested in buying a project, collaborating, or just want to say hello?</p>
+    <div class="contact-links">
+      <a href="mailto:muralikrishna3570@gmail.com" class="btn btn-primary">muralikrishna3570@gmail.com</a>
+      <a href="https://linkedin.com/in/muralikrishnakuppala" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
+      <a href="https://github.com/murali19980" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Murali Krishna · muralikrishna.dpdns.org · Built with intention, sold with purpose.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
