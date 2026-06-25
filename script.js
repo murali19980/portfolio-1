@@ -60,4 +60,22 @@ document.addEventListener('DOMContentLoaded', () => {
     el.style.setProperty('--delay', `${(index % 3) * 0.1}s`);
     observer.observe(el);
   });
+
+  // ─── Back to Top Button ───────────────────
+  const backToTopBtn = document.createElement('button');
+  backToTopBtn.classList.add('back-to-top');
+  backToTopBtn.innerHTML = '↑';
+  document.body.appendChild(backToTopBtn);
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 400) {
+      backToTopBtn.classList.add('visible');
+    } else {
+      backToTopBtn.classList.remove('visible');
+    }
+  });
+
+  backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
 });
