@@ -1,15 +1,29 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // ── Nav Scroll Effect ──
-  const nav = document.querySelector('nav');
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 20) {
-      nav.style.boxShadow = '0 4px 20px rgba(0,0,0,0.3)';
-    } else {
-      nav.style.boxShadow = 'none';
-    }
-  });
+  // ─── Dynamic Footer Year ──────────────────
+  const footerYear = document.querySelector('.footer-left');
+  if (footerYear) {
+    const currentYear = new Date().getFullYear();
+    footerYear.textContent = `© ${currentYear} Murali Krishna · muralikrishna.dpdns.org`;
+  }
 
-  // ── Smooth Scroll for Nav Links ──
+  // ─── Console Branding ─────────────────────
+  console.log('%c Murali Krishna ', 'background:#2DD4BF; color:#0B0D0F; font-size:1.2rem; font-weight:bold; padding:4px 8px; border-radius:4px;');
+  console.log('%c AI Systems Engineer · Local-First AI · Zero Cost Inference', 'color:#8FA3B8; font-size:0.9rem;');
+  console.log('🚀 Available for projects on Upwork.');
+
+  // ─── Nav Scroll Effect ─────────────────────
+  const nav = document.querySelector('nav');
+  if (nav) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 20) {
+        nav.style.boxShadow = '0 4px 20px rgba(0,0,0,0.3)';
+      } else {
+        nav.style.boxShadow = 'none';
+      }
+    });
+  }
+
+  // ─── Smooth Scroll for Nav Links ───────────
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
@@ -23,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // ── Fade-in Observer for Cards & Sections ──
+  // ─── Fade-in Observer for Cards & Sections ──
   const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
